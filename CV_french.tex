@@ -1,12 +1,43 @@
 \documentclass[10pt]{article}
 
+\usepackage[margin=2cm]{geometry}
+
+
 \usepackage[french]{babel}
 \usepackage[utf8]{inputenc} 
 
 \usepackage{marvosym}
 \usepackage{hyperref}
 
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
 \begin{document}
+
+% Custom defined colors
+\definecolor{myBlue}{rgb}{0,0.0,0.79}
+\definecolor{myWhite}{rgb}{0.99,0.99,0.99}
+\definecolor{myBlack}{rgb}{0.01,0.01,0.01}
+
+% Custom defined sizes
+\newlength{\mySectionHeaderWidth}
+\addtolength{\mySectionHeaderWidth}{
+    0.95\linewidth
+}
+
+% Custom made macros
+\newcommand{\mySectionHeader}[1]{
+    \fcolorbox{myBlue}{myBlue}{
+    \makebox[\mySectionHeaderWidth][c]{
+        \color{myWhite}{
+            \textbf{
+                \uppercase{#1}
+            }
+        }
+    }
+}
+}
+
 
 \pagestyle{empty}
 
@@ -15,10 +46,9 @@
 2 place de l'arbonnoise,\\
 59000 Lille.\\
 \Mobilefone : (0033) 6 25 85 55 83\\
-\Email: \url{juan.restrepop@gmail.com
-}\\
+\Email: \url{juan.restrepop@gmail.com}\\
 
 % EDUCATION
-
+\mySectionHeader{education}
 
 \end{document}
