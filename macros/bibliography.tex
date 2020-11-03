@@ -1,0 +1,13 @@
+% \myBibliographyEntry{title}{authors}{journal}{date}
+\newcommand{\myBibliographyEntry}[4]{
+    \item[$\ast$] \textcolor{myBlue}{#1}, #2, \textit{#3} (#4)    
+}
+
+% \myBibliography{bibliography content}
+\newcommand{\myBibliography}[1]{
+    \begin{minipage}{0.90\linewidth}
+        \begin{itemize}
+            #1
+        \end{itemize}
+    \end{minipage}
+}
