@@ -1,0 +1,24 @@
+%% <<<<<<<<<<<< CV HEADER >>>>>>>>>>>>>>>
+\newcommand{\myCvHeader}[4]{
+    \noindent #1\\
+    #2\\
+    \Mobilefone : #3\\
+    \Email: #4\\
+}
+
+
+%% <<<<<<<<<<<< CV SECTION >>>>>>>>>>>>>>>
+
+% \mySectionHeader{title}
+\newcommand{\mySectionHeader}[1]{
+    \noindent \fcolorbox{myBlue}{myBlue}{
+        \makebox[\mySectionHeaderWidth][c]{
+            \color{myWhite}{
+                \textbf{
+                    \uppercase{#1}
+                }
+            }
+        }
+    }
+    \bigskip
+}

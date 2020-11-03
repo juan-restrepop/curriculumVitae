@@ -1,0 +1,68 @@
+%% <<<<<<<<<<<<<<<<<<<< PROFESSIONAL EXPERIENCE HEADER >>>>>>>>>>>>>>>
+
+%\myProExperienceDate{begining}{end}
+\newcommand{\myProExperienceDate}[2]{
+    \begin{minipage}[t]{0.20\linewidth}
+        \textbf{\color{myBlue}{
+            #1 - #2:
+        }}
+    \end{minipage}
+}
+
+% \myProExperienceTitle{JobTitle}{Company}{Location}
+\newcommand{\myProExperienceTitle}[3]{
+    \begin{minipage}[t]{0.70\linewidth}
+        \underline{\textbf{\color{myBlue}{
+            \uppercase{#1}
+        }}}, 
+        #2,
+        \textit{#3}.
+    \end{minipage}
+}
+
+% \myProExperienceHeader{beginDate}{endDate}{jobTitle}{company}{location}
+\newcommand{\myProExperienceHeader}[5]{
+    \noindent \myProExperienceDate{#1}{#2}
+    \myProExperienceTitle{#3}{#4}{#5}
+    \medskip
+}
+
+%% <<<<<<<<<<<<<<<<<<<< PROFESSIONAL EXPERIENCE DETAIL >>>>>>>>>>>>>>>
+
+% \myProExperienceDetailSummary{summary}
+\newcommand{\myProExperienceDetailSummary}[1]{
+    \noindent \begin{minipage}{0.07\linewidth}{ \hspace{\fill} }
+    \end{minipage}
+    \begin{minipage}{0.83\linewidth}{
+        $\propto$ \textbf{\color{myBlue}{
+            #1
+        }}
+    }
+    \end{minipage}
+    \medskip
+}
+
+% \myProExperienceDetailSkills{skills}
+\newcommand{\myProExperienceDetailSkills}[1]{
+    \noindent \begin{minipage}{0.13\linewidth}{ \hspace{\fill} }
+    \end{minipage}
+    \begin{minipage}{0.75\linewidth}{
+        #1
+    }
+    \end{minipage}
+    \medskip
+}
+% \myProExperienceDetailTools{toolsName}{tools}
+\newcommand{\myProExperienceDetailTools}[2]{
+    \noindent \begin{minipage}[t]{0.13\linewidth}{ \hspace{\fill} }
+    \end{minipage}
+    \begin{minipage}[t]{0.25\linewidth}{
+        \textbf{\color{myBlue}{#1: }}
+    }
+    \end{minipage}
+    \begin{minipage}[t]{0.45\linewidth}{
+        #2
+    }
+    \end{minipage}
+    
+}
