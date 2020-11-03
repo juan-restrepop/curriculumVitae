@@ -73,6 +73,50 @@
     \end{minipage}
 }
 
+% \myProExperienceHeader{beginDate}{endDate}{jobTitle}{company}{location}
+\newcommand{\myProExperienceHeader}[5]{
+    \noindent \myProExperienceDate{#1}{#2}
+    \myProExperienceTitle{#3}{#4}{#5}
+    \medskip
+}
+
+% \myProExperienceDetailSummary{summary}
+\newcommand{\myProExperienceDetailSummary}[1]{
+    \noindent \begin{minipage}{0.07\linewidth}{ \hspace{\fill} }
+    \end{minipage}
+    \begin{minipage}{0.83\linewidth}{
+        $\propto$ \textbf{\color{myBlue}{
+            #1
+        }}
+    }
+    \end{minipage}
+    \medskip
+}
+
+% \myProExperienceDetailSkills{skills}
+\newcommand{\myProExperienceDetailSkills}[1]{
+    \noindent \begin{minipage}{0.13\linewidth}{ \hspace{\fill} }
+    \end{minipage}
+    \begin{minipage}{0.75\linewidth}{
+        #1
+    }
+    \end{minipage}
+    \medskip
+}
+% \myProExperienceDetailTools{toolsName}{tools}
+\newcommand{\myProExperienceDetailTools}[2]{
+    \noindent \begin{minipage}[t]{0.13\linewidth}{ \hspace{\fill} }
+    \end{minipage}
+    \begin{minipage}[t]{0.25\linewidth}{
+        \textbf{\color{myBlue}{#1: }}
+    }
+    \end{minipage}
+    \begin{minipage}[t]{0.45\linewidth}{
+        #2
+    }
+    \end{minipage}
+    
+}
 
 \pagestyle{empty}
 
@@ -86,16 +130,26 @@
 % PRO EXPERIENCE
 \mySectionHeader{expérience professionnelle}
 
-\myProExperienceDate{01/2019}{02/2020}
-\myProExperienceTitle{ingénieur logiciels}{DreamQuark}{Paris, France}
+\myProExperienceHeader{01/2019}{02/2020}
+    {ingénieur logiciels}
+    {DreamQuark}
+    {Paris, France}
 
-$\propto$ \loremParagraph{}
+\myProExperienceDetailSummary{\loremParagraph}
 
-$\ni$ \loremSentence{}\\
-$\ni$ \loremSentence{}\\
-$\ni$ \loremSentence{}\\
-$\ni$ \loremSentence{}\\
-$\ni$ \loremSentence{}\\
+\myProExperienceDetailSkills{
+    $\ni$ \loremSentence{}\\
+    $\ni$ \loremSentence{}\\
+    $\ni$ \loremSentence{}\\
+    $\ni$ \loremSentence{}\\
+    $\ni$ \loremSentence{}\\
+}
+
+\myProExperienceDetailTools{environnment technique}{
+    reactJS, redux, angularJS, D3JS, CSS, python, nodeJS, cypress, reactJS, redux, angularJS, D3JS, CSS, python, nodeJS, cypress,
+}
+
+
 
 
 
