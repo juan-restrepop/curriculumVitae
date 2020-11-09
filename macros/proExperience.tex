@@ -59,12 +59,18 @@
     }
     \end{minipage}
 }
+
+% \myProExperienceDetailSkillEntry{skill text}
+\newcommand{\myProExperienceDetailSkillEntry}[1]{
+    $\ni$ #1
+}
+
 % \myProExperienceDetailTools{toolsName}{tools}
 \newcommand{\myProExperienceDetailTools}[2]{
     \noindent \begin{minipage}[t]{0.13\linewidth}{ \hspace{\fill} }
     \end{minipage}
-    \begin{minipage}[t]{0.25\linewidth}{
-        \textbf{\color{myBlue}{#1: }}
+    \begin{minipage}[b]{0.25\linewidth}{
+        \color{myBlue}{#1: }
     }
     \end{minipage}
     \begin{minipage}[t]{0.45\linewidth}{
