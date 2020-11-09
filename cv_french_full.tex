@@ -1,6 +1,6 @@
 \documentclass[10pt]{article}
 
-\usepackage[margin=1.5cm]{geometry}
+\usepackage[margin=1.0cm]{geometry}
 
 
 \usepackage[french]{babel}
@@ -25,17 +25,19 @@
     0.95\linewidth
 }
 
-\input{macros/utilities.tex}
-\input{macros/proExperience.tex}
+\input{macros/bibliography.tex}
 \input{macros/education.tex}
+\input{macros/languages.tex}
 \input{macros/layout.tex}
+\input{macros/proExperience.tex}
+\input{macros/utilities.tex}
 
 \pagestyle{empty}
 
 % <<<<<<<<<<<<<<<<<<< CV HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>
 \myCvHeader{Juan Sebasti\'an Restrepo Pinzon}
-    {2 place de l'arbonnoise,\\59000 Lille.}
-    {(0033) 6 25 85 55 83}
+    {123 Rue du Secret,\\75000 Paris.}
+    {(0033)1 23 45 67 89}
     {\url{juan.restrepop@gmail.com}}
 
 % <<<<<<<<<<<<<<<<<<< PRO EXPERIENCES >>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -125,4 +127,72 @@
     {Université de Paris}
     {Paris, France}
     {Théorie de systèmes optomécaniques avec des couplages non-linéaires et non conventionnels}
+
+\myDiplomaEntry
+    {2010}
+    {Master Recherche physique fondamental}
+    {Université de Paris}
+    {Paris, France}
+    {Dispositifs quantiques et imagerie}
+
+\myDiplomaEntry
+    {2008}
+    {Licence de physique}
+    {Université de Paris}
+    {Paris, France}
+    {physique fondamental}
+
+\myDiplomaEntry
+    {2007}
+    {CPGE}
+    {Lyçée Kleber}
+    {Strasbourg, France}
+    {MPSI, MP*}
+
+\myDiplomaEntry
+    {2005}
+    {Baccalauréat scientifique}
+    {Lyçée Français Louis Pasteur}
+    {Bogot\'a, Colombie}
+    {option mathématiques}
+
+\mySectionsSeparator{}
+
+% <<<<<<<<<<<<<<<<<<< LANGUES >>>>>>>>>>>>>>>>>>>>>>>>>>
+\mySectionHeader{langues}
+
+\myLanguages{
+    \myLanguageEntry{Anglais}{Compétence professionnelle complète (toeic: 990/990, 07/2013)}
+    \myLanguageEntry{Espagnol}{Langue maternelle}
+    \myLanguageEntry{Français}{Bilingue}
+}
+
+\mySectionsSeparator{}
+
+% <<<<<<<<<<<<<<<<<<< Bibliographie >>>>>>>>>>>>>>>>>>>>>>>>>>
+\mySectionHeader{bibliographie}
+
+\myBibliography{
+    
+        \myBibliographyEntry
+            {Fully coupled hybrid cavity optomechanics: quantum interferences and correlations}
+            {Restrepo J. et al}
+            {Phys. Rev. A, 95, 023832}
+            {2017}
+         \myBibliographyEntry
+            {Single Polariton Optomechanics}
+            {Restrepo J. et al}
+            {Phys. Rev. Lett, 112, 013601}
+            {2014}
+         \myBibliographyEntry
+            {Classical and quantum theory of photothermal cavity cooling of a mechanical oscillator}
+            {Restrepo J. et al}
+            {C. R. Physique, Volume 12, Issues 9-10}
+            {2011}
+    
+}
+
+
+\mySectionsSeparator{}
+
 \end{document}
